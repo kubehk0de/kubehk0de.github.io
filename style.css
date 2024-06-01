@@ -174,7 +174,7 @@ video {
     padding-left: 10px;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
     :root {
         font-size: 16px;
     }
@@ -188,11 +188,57 @@ video {
         max-width: 90%;
         margin: 10px auto;
         font-size: 1.5rem;
+        border-radius: 90px;
     }
 
     .content {
+        display: flex;
+        justify-content: center;
+        align-content: center;
         max-width: 90%;
         padding: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    :root {
+        font-size: 12px;
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #diversetext , #fishtext, #coraltext, #overfishtext, #invasivetext, #humantext, #littertext, #assisttext, #environmenttext {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        color: red;
+    }
+}
+
+@media (max-width: 430px) {
+    :root {
+        font-size: 15px;
+    }
+
+    #diversetext, #fishtext, #coraltext, #overfishtext, #invasivetext, #humantext, #littertext, #assisttext, #environmenttext {
+       display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        color: red;
+    }
+
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-content: center;
     }
 }
 
