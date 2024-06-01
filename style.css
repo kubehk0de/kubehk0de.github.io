@@ -186,7 +186,6 @@ video {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: red;
         font-weight: normal;
         max-width: 20px;
     }
@@ -199,7 +198,6 @@ video {
        display: flex;
         justify-content: center;
         align-items: center;
-        color: red;
     }
 
 
@@ -221,7 +219,6 @@ video {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: red;
     }
 }
 
