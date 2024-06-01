@@ -120,8 +120,7 @@ video {
     margin: 0;
 }
 
-.hovertext, .hovertext li {
-    cursor: pointer;
+.hovertext {
     list-style-type: none;
     text-align: center;
     margin: 10px 0;
@@ -130,11 +129,7 @@ video {
     font-weight: bold;
     border: solid;
     background-color: rgb(63, 63, 63);
-    transition: transform 0.3s ease, font-size 0.3s ease;
-}
-
-.hovertext:hover {
-    transform: scale(1.2);
+    transition: font-size 0.3s ease;
 }
 
 .content {
@@ -145,11 +140,25 @@ video {
     text-align: center;
 }
 
-.hovertext:hover + .content,
-.hovertext:hover + img + .content {
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content.in-view {
     display: block;
     opacity: 1;
     transform: translateY(0);
+}
+
+.content.in-view {
+    animation: fadeInUp 0.5s ease forwards;
 }
 
 #sources {
@@ -164,6 +173,7 @@ video {
     flex-direction: column;
     padding-left: 10px;
 }
+
 @media (max-width: 575.98px) {
     :root {
         font-size: 16px;
@@ -274,3 +284,6 @@ video {
         padding: 30px;
     }
 }
+
+
+
